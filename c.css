@@ -1,0 +1,151 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+text-decoration: none;
+}
+:root{
+    --bgcolor :#080e1c;
+    --textwhite: #fff;
+
+}
+.container{
+    
+    height: 100vh;
+    background-color: var(--bgcolor);
+    overflow: hidden;
+}
+.container header nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: auto;
+    width: 90%;
+    height: 100px;
+}
+.container header nav .logo{
+    color: var(--textwhite);
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+    
+.container header nav .logo span{
+    color: #23a3fe;
+}
+.container header nav .nav-links{
+    color: var(--textwhite);
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    margin: 0 30px;
+}
+.container header nav .nav-links a{
+    transition: 0.3s;
+    color: white;
+    margin-right: 20px;
+    position: relative;
+}
+.container header nav .nav-links a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #23a3fe;
+    transition: 0.3s;
+}
+.container header nav .nav-links a:hover::before{
+    width: 100%;
+}
+.container header nav .nav-links a:hover{
+    color: #23a3fe;
+}
+.container header nav .btn-mode{
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.container .content{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px);
+
+}
+
+.div-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.div-img img{
+    width: 100%;
+}
+
+.container .div-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    margin-right: 50px;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+.container .div-text>span{
+    margin-top: 10px;
+}
+.container .div-text h1 span{
+    color: #23a3fe;
+}
+.container .div-text p{
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.container .div-text a{
+    color: #23a3fe;
+    margin-top: 20px;
+}
+.container .div-text.btn-mode{
+    color: #fff;
+    background: #23a3fe;
+    padding: 15px 30px;
+    border: 1px solid #23a3fe;
+    position: relative;
+    top:0;
+    transition: 0.3s;
+
+
+}
+   .container .div-text.btn-mode:hover{
+    top: -8px; 
+   }
+.social-icon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social-icon a{
+    color: #23a3fe;
+    font-size: 25px;
+    transition: 0.3s;
+   
+}
+.social-icon a:hover{
+   transform:scale(1.3);
+}
