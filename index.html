@@ -1,52 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="c.css">
-        - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> 
-        <title>Document</title>
-    </head>
-    <body>
-        <section class="container">
-            <header>
-                <nav> 
-                    <a href="# "class ="logo"><span>Mr</span>Ahmed</a>
-                    <div class="nav-links">
-                            <a href="# ">Home</a>
-                            <a href="# ">About</a>
-                            <a href="# ">Contact</a>
-                            <a href="# ">Services</a>
-                            <a href="# ">Portfolio</a>
-                            <a href="# ">Contact</a>
-                    </div>
-                    <span><i class="fa-solid fa-sun btn-mode"></i></span>
-                </nav>
-            </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed Tamer | Front-End Developer</title>
+  <link rel="stylesheet" href="c.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- وضع النهار/الليل -->
+  <input type="checkbox" id="mode-switch" hidden>
 
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">Ahmed<span>Tamer</span></div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <label for="mode-switch" class="btn-mode">
+          <i class="fas fa-moon"></i>
+        </label>
+      </nav>
+    </header>
 
-            <div class="content">
-                <div class="div-text">
-                    <h1>Hello my name is : <span>Ahmed Tamer</span></h1>
-                    <span>- Web Developer</span>
-                        <p>strong interest in creating clean and functional websites.
-                            I have a good understanding of HTML and CSS, and I’m constantly improving my skills in web development.
-                            Currently, I’m also studying Pentesting (Penetration Testing) to expand my knowledge in cybersecurity.
-                            I enjoy learning new technologies and aim to build creative, user-friendly, and secure web projects.
-                        </p>
+    <!-- Hero Section -->
+    <section class="content">
+      <div class="div-text">
+        <h1>Hi, I'm <span>Ahmed Tamer</span></h1>
+        <span>Front-End Developer & Cybersecurity Enthusiast</span>
+        <p>
+          Passionate about crafting responsive websites with a focus on user experience.  
+          I'm also diving into the world of penetration testing and ethical hacking.
+        </p>
+        <a href="AhmedTamer_CV.pdf" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="div-img">
+        <img src="t.jpeg"Ahmed Tamer" />
+      </div>
+    </section>
 
-                        <a href="#" class="btn">download cv</a>
-                </div>
-                <div class="div-img">
-                    <div class="social-icon">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm a junior web developer with solid knowledge of HTML, CSS, and modern front-end tools.  
+        I spend my time learning JavaScript and practicing ethical hacking.  
+        I aim to become a full-stack developer with security expertise to build secure web apps.
+      </p>
+    </section>
 
-                        <a herf ="#"<i class="fa-brands fa-facebook"></i></a>
-                        <a herf ="#"<i class="fa-brands fa-instagram"></i></a>
-                        <a herf ="#"<i class="fa-brands fa-twitter"></i></a>
-                        <a herf ="#"<i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <img src="t.jpeg" alt="Profile Image">
-                </div>
-            </div>
-        </section>
-    </body>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js-square"></i> JavaScript (Learning)</li>
+        <li><i class="fas fa-user-secret"></i> Penetration Testing (Beginner)</li>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Personal Portfolio Website</h3>
+          <p>Simple, clean responsive portfolio using HTML & CSS only with Light/Dark mode toggle.</p>
+        </div>
+        <div class="project">
+          <h3>Login Page UI</h3>
+          <p>Responsive login form with validation-ready structure and animations.</p>
+        </div>
+        <div class="project">
+          <h3>Linux Commands Cheatsheet</h3>
+          <p>Markdown-based cheatsheet with all essential terminal commands for pentesting & scripting.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Certificates Section -->
+<section id="certificates" class="section">
+  <h2>Certificates</h2>
+  <div class="cert-list">
+    <div class="cert">
+      <h3>Intro to Cybersecurity – Cisco</h3>
+      <p>Completed a foundational course introducing cybersecurity principles, threats, and protection methods.</p>
+      <a href="https://www.netacad.com/certificate-link" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert">
+      <h3>HTML & CSS – freeCodeCamp</h3>
+      <p>Built responsive web pages and learned core web design concepts using modern HTML and CSS.</p>
+      <a href="https://www.freecodecamp.org/certificate-link" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert">
+      <h3>Ethical Hacking Basics – TryHackMe</h3>
+      <p>Hands-on experience with Linux, networking, enumeration, and beginner pentesting labs.</p>
+      <a href="https://tryhackme.com/room-link" target="_blank">View Certificate</a>
+    </div>
+  </div>
+</section>
+<!-- Gallery Section -->
+<section id="gallery" class="section">
+  <h2>My Gallery</h2>
+  <div class="gallery">
+    <img src="img/project1.png" alt="Project Screenshot">
+    <img src="img/project2.png" alt="Project Screenshot">
+    <img src="img/cert1.png" alt="Certificate">
+    <img src="img/cert2.png" alt="Certificate">
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>
+        📧 Email: <a href="mailto:ahmed@example.com">ahmed@example.com</a> <br />
+        💼 GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a> <br />
+        📝 LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
